@@ -1,0 +1,12 @@
+app>>
+
+/css 
+For all css files
+
+/utilityComponent
+Small components like cards
+
+/components
+Big components like Homepage or About Page
+
+
