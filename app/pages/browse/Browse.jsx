@@ -82,11 +82,11 @@ Search
         <div className="flex flex-wrap justify-center max-w-[1200px]">
           {sortedProducts.map((product) => {
             return (
-              <div className="flex">
+              <div key={product.productId} className="flex">
                 <Suspense fallback={""}>
-                  <div>
-                    <Link href={`/pages/product/${product.productId}`}>
-                  <Productcard title={product.name} price={product.price} />
+                  <div key={product.productId}>
+                    <Link key={product.productId} href={`/pages/product/${product.productId}`}>
+                  <Productcard key={product.productId} title={product.name} price={product.price} />
                     </Link>
                   </div>
                 </Suspense>
