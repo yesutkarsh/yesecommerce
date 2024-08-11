@@ -1,9 +1,9 @@
 import React from 'react'
 import style from "../app/css/productcard.module.css"
-export default function Productcard({title, price}) {
+export default function Productcard({title, price, productId}) {
   return (
     <>
-    <div className={style.products}>
+    <div key={productId} className={style.products}>
      <div className={style.product}> 
      <div className={style.dark}>
       <div>
