@@ -2,10 +2,20 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import Card from '../components/card'
+import Loading from '@/utils/Loading'
 export default function Id() {
   const params = useParams()
   const {id} = params
 
+
+  // Animation
+  const [loadingbar,setloadingbar] = useState(true)
+  const off = ()=>{
+      setloadingbar(false)
+  }
+  
+  
+  // Animation
 
   const [data, setData] = useState([])
 
@@ -14,9 +24,14 @@ export default function Id() {
     const json = await data.json()
     setData(json)
   }
-  useEffect(()=>{fetching()},[])
+  useEffect(()=>{
+    fetching()
+  off()
+
+  },[])
   return (
     <>
+     {loadingbar?<Loading/>:""}
     {data.length!==0? 
 
       data.map((prod)=>{

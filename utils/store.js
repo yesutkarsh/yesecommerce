@@ -3,7 +3,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import toggleSliceReducer from './slices/toggle';
 const store = configureStore({
   reducer: {
-    toggleCard:toggleSliceReducer
+    toggleAnimation:toggleSliceReducer
     
   },
 });

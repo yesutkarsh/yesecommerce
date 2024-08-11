@@ -1,15 +1,30 @@
 "use client"
 import { useEffect, useState, useRef } from "react";
-import style from "./page.module.css";
+import style from "../page.module.css";
 import Productcard from "@/globalComponents/productcard";
 import { Suspense } from "react";
 import Link from "next/link";
+import { useParams } from "next/navigation";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleAnimation } from "@/utils/slices/toggle";
+import Loading from "@/utils/Loading";
 export default function Browse() {
+
+  const params = useParams()
+  const {category} = params
   const [data, setData] = useState(null);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [query, setQuery] = useState("women");
+  const [query, setQuery] = useState(category);
   const [sortDirection, setSortDirection] = useState("asc"); // added state variable
 
+const [loadingbar,setloadingbar] = useState(true)
+const off = ()=>{
+    setloadingbar(false)
+}
+
+useEffect(()=>{
+off()
+},[])
 
 
 
@@ -46,7 +61,7 @@ export default function Browse() {
   return (
     <>
 
-
+{loadingbar?<Loading/>:""}
 
     <div className={style.search}>
 <div>
@@ -64,7 +79,7 @@ Search
 </div>
 </div>
 
-
+<h1 className="m-5 font-bold">Showing Results for {query}</h1>
 
       {/* ... */}
       <div className={style.filter}>

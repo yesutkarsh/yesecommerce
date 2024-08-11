@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import style from "../../css/section.module.css";
 import footerStyle from "../../css/footer.module.css"
 import pic1 from "../../../public/assets/1.png";
@@ -6,9 +7,26 @@ import pic2 from "../../../public/assets/2.jpg";
 import pic3 from "../../../public/assets/3.png";
 import Link from "next/link";
 import Image from "next/image";
+import { useDispatch, useSelector } from "react-redux";
+import Loading from "@/utils/Loading";
+import { toggleAnimation } from "@/utils/slices/toggle";
 export default function Homepage() {
+
+  const loadingbar = useSelector((store)=>{
+    return store?.toggleAnimation?.animation
+  })
+
+
+const dispatch = useDispatch()
+
+console.log(loadingbar)
+useEffect(()=>{
+dispatch(toggleAnimation())
+},[])
+
   return (
     <>
+    {loadingbar?<Loading/>:""}
       <div id={style.section1}>
         <h1 id={style.coll}>COLLECTION</h1>
         <div id={style.cards}>
@@ -18,7 +36,7 @@ export default function Homepage() {
             id={style.card}
           >
             <div id={style.navCooll}>
-              <Link href="/pages/browse">
+              <Link href="/pages/browse/men">
                 <span>MEN</span>
                 <i class="ri-arrow-right-up-line"></i>
               </Link>
@@ -33,13 +51,10 @@ export default function Homepage() {
             id={style.card}
           >
             <div id={style.navCooll}>
-              <a
-                style={{ color: "rgb(37, 37, 37)" }}
-                href="http://localhost:5500/routes/women.html"
-              >
+            <Link href="/pages/browse/women">
                 <span>WOMEN</span>
                 <i class="ri-arrow-right-up-line"></i>
-              </a>
+              </Link>
             </div>
             <p style={{ textAlign: "right" }}>
               SHIRT | PANT | UPPER | LOWER | JEANS | TSHIRT |

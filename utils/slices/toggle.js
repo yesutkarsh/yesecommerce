@@ -3,20 +3,17 @@ import { createSlice } from "@reduxjs/toolkit";
 const toggleSlice = createSlice({
     name:"toggle",
     initialState:{
-        productDetails:false
+        animation:true
     },
     reducers:{
-        toggleProdDetailCard:(state,action)=>{
-            state.productDetails = true
+        toggleAnimation:(state,action)=>{
+            state.animation = false
 
         },
-        toggleProdDetailCardOff:(state,action)=>{
-            state.productDetails = false
-        }
     }
     
 })
 
 
-export const {toggleProdDetailCard, toggleProdDetailCardOff} = toggleSlice.actions
+export const {toggleAnimation} = toggleSlice.actions
 export default toggleSlice.reducer
