@@ -4,7 +4,6 @@ import style from "./page.module.css";
 import Productcard from "@/globalComponents/productcard";
 import { Suspense } from "react";
 import Link from "next/link";
-import LazyLoadComponent from "@/LazyLoadComponent";
 export default function Browse() {
   const [data, setData] = useState(null);
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -82,7 +81,6 @@ Search
         <div className="flex flex-wrap justify-center max-w-[1200px]">
           {sortedProducts.map((product) => {
             return (
-                  <LazyLoadComponent>
                 <div key={product.productId} className="flex">
 
                   <div key={product.productId}>
@@ -91,7 +89,6 @@ Search
                     </Link>
                   </div>
               </div>
-                </LazyLoadComponent>
             );
           })}
         </div>
