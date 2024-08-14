@@ -2,11 +2,8 @@
 import { useEffect, useState, useRef } from "react";
 import style from "../page.module.css";
 import Productcard from "@/globalComponents/productcard";
-import { Suspense } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useDispatch, useSelector } from "react-redux";
-import { toggleAnimation } from "@/utils/slices/toggle";
 import Loading from "@/utils/Loading";
 export default function Browse() {
 
@@ -21,10 +18,6 @@ const [loadingbar,setloadingbar] = useState(true)
 const off = ()=>{
     setloadingbar(false)
 }
-
-useEffect(()=>{
-off()
-},[])
 
 
 
@@ -42,6 +35,8 @@ off()
 
   useEffect(() => {
     fetching();
+    off()
+
   }, []);
 
   const handleSort = (direction) => {

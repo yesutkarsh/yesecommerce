@@ -2,20 +2,11 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import Card from '../components/card'
-import Loading from '@/utils/Loading'
 export default function Id() {
   const params = useParams()
   const {id} = params
 
 
-  // Animation
-  const [loadingbar,setloadingbar] = useState(true)
-  const off = ()=>{
-      setloadingbar(false)
-  }
-  
-  
-  // Animation
 
   const [data, setData] = useState([])
 
@@ -26,17 +17,12 @@ export default function Id() {
   }
   useEffect(()=>{
     fetching()
-  off()
-
   },[])
+
   return (
     <>
-     {loadingbar?<Loading/>:""}
     {data.length!==0? 
-
-      data.map((prod)=>{
-        return <Card key={prod.productId} title={prod.name} description={prod.description}/>
-      })
+        <Card id={data[0].productId} key={data[0].productId} price={data[0].price} title={data[0].name} description={data[0].description}/>
     
     :"Sorry, but we couldn't find the product you're looking for."}
 

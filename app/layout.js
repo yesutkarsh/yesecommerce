@@ -9,6 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export default function RootLayout({ children }) {
+
+
   return (
 
     <Provider store={store}>
@@ -26,6 +28,7 @@ export default function RootLayout({ children }) {
         color="#313f2c"
         height={7}
         />
+
       <Navbar/>
 
         {children}

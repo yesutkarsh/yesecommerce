@@ -1,0 +1,91 @@
+.container{
+    position: fixed;
+    overflow: hidden;
+    background-color: rgba(228, 228, 228, 0.541);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    max-height: 100%; /* Changed from height to max-height */
+    border-left: 1px solid #ddd;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.checkout{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.checkout button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px;
+
+}
+.checkout span{
+    background-color: whitesmoke;
+    width: 100%;
+    font-size: 25px;
+    padding: 5px;
+}
+.products{
+    overflow-x: auto;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    height: 100%;
+}
+
+
+.cartCard{
+    background-color: rgba(255, 255, 255, 0.89);
+    min-height: 110px;
+    width: 95%;
+    border-radius: 12px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 4px;
+}
+.cartCard span{
+    width: 100%;
+    text-align: left;
+}
+
+.cartCard button{
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    height: 40px;
+    border: none;
+    font-weight: 300;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

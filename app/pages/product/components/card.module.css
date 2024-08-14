@@ -50,6 +50,7 @@
         margin: 20px;
     }
     .section2 button{
+        margin-bottom: 90px;
         display: flex;
         align-items: center;
         justify-content: center;

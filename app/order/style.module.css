@@ -1,0 +1,45 @@
+.order{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+.products{
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    padding: 10px;
+}
+.form{
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    padding: 10px;
+    display: flex;
+    height: 100%;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+.form h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+.form input{
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+.form textarea{
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.form button{
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 10px;
+}
