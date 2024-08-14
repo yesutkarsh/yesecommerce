@@ -1,12 +1,8 @@
-"use client"
-
 import React from 'react'
-import { LoginLink } from '@kinde-oss/kinde-auth-nextjs'
+import Whoami from './WhoamI'
+
 export default function page() {
   return (
-    <>
-    hello
-    // <LoginLink>Login</LoginLink>
-    </>
+    <Whoami/>
   )
 }

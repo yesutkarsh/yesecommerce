@@ -45,9 +45,9 @@ export default function Navbar() {
       >HEAVENLY</div>
       </Link>
       <div id={style.rightNav}>
-        <a style={{color:"black"}} href="./routes/account.html">
+      <Link className='text-black' href={"/whoami"}>
         <i class="ri-user-smile-fill"></i>
-        </a>
+      </Link>
         <div onClick={toggleCarts} className='cursor-pointer'>
         <i class="ri-shopping-cart-2-fill"></i>
         </div>
