@@ -5,8 +5,7 @@ export default function NoAccount() {
   return (
     <div className={style.container}>
       <h1>
-        Hey, it looks like you either don't have an account or you're logged
-        out. Please use the button below to continue to your account.
+        Hey, it looks like you either do not have an account or you are logged out. Please use the button below to continue to your account.
       </h1>
       <br />
       <hr />
