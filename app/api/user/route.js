@@ -9,6 +9,6 @@ export async function GET() {
     if(user){
         return NextResponse.json(user)
     }else{
-        return null
+        return NextResponse.json({ error: "User not found" }, { status: 404 });
     }
 }

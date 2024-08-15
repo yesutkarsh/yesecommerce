@@ -24,8 +24,11 @@ export default function WhoamI() {
   },[])
   return (
     <>
-    {console.log(user)}
-    {user !== null?<User name={user.given_name+" "+user.family_name} email={user.email} img={user.picture}/>:<NoAccount/>}
+ {user?.error !== "User not found" ? (
+  <User name={`${user?.given_name ?? ""} ${user?.family_name ?? ""}`} email={user?.email ?? ""} img={user?.picture ?? ""} />
+) : (
+  <NoAccount />
+)}
     </>
   )
 }
