@@ -47,12 +47,12 @@
     z-index: 998;    
     overflow: hidden;
     position: fixed;
-    bottom: 0;
     width: 100%;
     display: none;
     align-items: center;
     justify-content: space-around;
     font-size: 30px;
+    border-radius: 2px 2px 0px 0px;
 }
 @media screen and (max-width:704px) {
     #leftNav{

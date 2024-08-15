@@ -4,13 +4,15 @@ import Link from 'next/link'
 import Cart from "@/globalComponents/Cart";
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleCart } from '@/utils/slices/toggle';
+import { addToCart } from '@/utils/slices/cart';
+import { motion } from 'framer-motion';
 export default function Navbar() {
 
 
   const cart = useSelector((store)=>{
     return store?.toggleAnimation?.cart
   })
-  console.log(cart)
+  // console.log(cart)
 
 
   const dispatch = useDispatch()
@@ -19,7 +21,9 @@ export default function Navbar() {
     dispatch(toggleCart())
   }
 
-  
+
+
+
   return (
 <>
 
@@ -61,7 +65,7 @@ export default function Navbar() {
 
 
 
-    <div className={style.bottomNav}>
+    <motion.div initial={{bottom:"-45px"}} animate={{bottom:0}} className={style.bottomNav}>
       <Link href={"/"}>
     <i class="ri-home-2-fill"></i>
       </Link>
@@ -75,7 +79,7 @@ export default function Navbar() {
     <i class="ri-shopping-cart-2-fill"></i>
     </div>
 
-    </div>
+    </motion.div>
 
 </>
   )

@@ -19,7 +19,7 @@ export default function Homepage() {
 
 const dispatch = useDispatch()
 
-console.log(loadingbar)
+// console.log(loadingbar)
 useEffect(()=>{
 dispatch(toggleAnimation())
 },[])

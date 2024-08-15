@@ -36,7 +36,6 @@ const off = ()=>{
   useEffect(() => {
     fetching();
     off()
-
   }, []);
 
   const handleSort = (direction) => {
@@ -89,18 +88,20 @@ Search
       {/* ... */}
       <div className="grid place-items-center h-full w-full">
         <div className="flex flex-wrap justify-center max-w-[1200px]">
-          {sortedProducts.map((product) => {
+          {sortedProducts?
+          sortedProducts.map((product) => {
             return (
-                <div key={product.productId} className="flex">
-
-                  <div key={product.productId}>
-                    <Link key={product.productId} href={`/pages/product/${product.productId}`}>
-                  <Productcard key={product.productId} title={product.name} price={product.price} />
-                    </Link>
-                  </div>
-              </div>
+              
+              <div key={product.productId} className="flex">
+                <div key={product.productId}>
+                <Link key={product.productId} href={`/pages/product/${product.productId}`}>
+                <Productcard key={product.productId} title={product.name} price={product.price} />
+                </Link>
+                </div>
+                </div>
             );
-          })}
+          })
+          :<Loading/>}
         </div>
       </div>
     </>

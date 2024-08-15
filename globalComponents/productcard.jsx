@@ -1,10 +1,15 @@
 import React from 'react'
 import style from "../app/css/productcard.module.css"
+import { motion } from 'framer-motion'
 export default function Productcard({title, price, productId}) {
   return (
     <>
     <div key={productId} className={style.products}>
-     <div className={style.product}> 
+     <motion.div 
+      initial={{ opacity: 0, scale: 0.85 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.5 }}
+     className={style.product}> 
      <div className={style.dark}>
       <div>
         VIEW
@@ -23,12 +28,7 @@ export default function Productcard({title, price, productId}) {
 
         </div>
         </div>   
-    </div>
-
-
-
-
-
+    </motion.div>
 
     </div>
     </>
