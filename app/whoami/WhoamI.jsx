@@ -1,11 +1,31 @@
 "use client"
 
-import React from 'react'
-import { LoginLink } from '@kinde-oss/kinde-auth-nextjs'
-export default function Whoami() {
+import { useEffect, useState } from "react"
+import User from "./components/User"
+import NoAccount from "./components/NoAccount"
+
+export default function WhoamI() {
+  const [user, setUser] = useState(null)
+
+  const fetchData = async ()=>{
+    try{
+      let data = await fetch('/api/user')
+      let json = await data.json()
+      if(data){
+        setUser(json)
+      }
+    }catch(error){
+      console.log(error)
+    }
+  }
+
+  useEffect(()=>{
+    fetchData()
+  },[])
   return (
     <>
-    <LoginLink>Login</LoginLink>
+    {console.log(user)}
+    {user !== null?<User name={user.given_name+" "+user.family_name} email={user.email} img={user.picture}/>:<NoAccount/>}
     </>
   )
 }
