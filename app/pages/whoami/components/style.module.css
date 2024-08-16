@@ -1,12 +1,14 @@
 .container{
     width: 100%;
     padding: 20px;
+    margin-bottom: 100px;
 }
 .Name{
     background-color: whitesmoke;
     padding: 20px;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 100;
+
 }
 .info{
     background-color: black;
@@ -24,6 +26,9 @@
     align-items: center;
     justify-content: center;
     display: flex;
+}
+.Email{
+    margin-bottom: 10px;
 }
 .logout{
     border-radius: 20px;

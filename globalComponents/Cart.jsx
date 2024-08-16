@@ -122,7 +122,7 @@ export default function Cart() {
 
         <div className={style.checkout}>
             <span>Total : ₹ {totalPrice} </span>
-            <Link href={"/order"}>
+            <Link href={"/pages/order"}>
             <button onClick={toggleCarts}>Checkout</button>
             </Link>
         </div>

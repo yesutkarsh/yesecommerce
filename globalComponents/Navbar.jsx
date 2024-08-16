@@ -49,7 +49,7 @@ export default function Navbar() {
       >HEAVENLY</div>
       </Link>
       <div id={style.rightNav}>
-      <Link className='text-black' href={"/whoami"}>
+      <Link className='text-black' href={"pages/whoami"}>
         <i class="ri-user-smile-fill"></i>
       </Link>
         <div onClick={toggleCarts} className='cursor-pointer'>
@@ -72,7 +72,7 @@ export default function Navbar() {
       <Link href={"/pages/browse/a"}>
     <i class="ri-search-fill"></i>
       </Link>
-      <Link href={"/whoami"}>
+      <Link href={"pages/whoami"}>
     <i class="ri-user-smile-fill"></i>
       </Link>
     <div onClick={toggleCarts} className='cursor-pointer'>

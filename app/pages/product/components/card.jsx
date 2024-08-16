@@ -37,14 +37,14 @@ const [showCard, setShowCard] = useState(false);
     <div key={props.productId} className={style.wrapper}>
 
     <motion.div
-      initial={{ opacity: 0}}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0, marginTop:"100px"}}
+      animate={{ opacity: 1 , marginTop:"0px" }}
       className={style.section1}>
         <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/t-shirt/t/e/7/s-oversized-beige-ironflex-original-imagkjashnhxktjg.jpeg?q=90&crop=false" alt="product Image" />
     </motion.div>
     <div className={style.section2}>
-        <motion.div  initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}  className={style.name}>{props.title || "Tshirt Grey for Men"}</motion.div>
+        <motion.div  initial={{ opacity: 0, marginTop:"100px" }}
+      animate={{ opacity: 1, marginTop: "0px" }}  className={style.name}>{props.title || "Tshirt Grey for Men"}</motion.div>
         <div className={style.description}>{props.description || "Tshirt Grey for Men"}</div>
         <button onClick={addtoCart}>
           Add to Cart

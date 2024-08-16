@@ -1,0 +1,18 @@
+.heading{
+    margin: 20px;
+    font-size: 50px;
+    max-width: 700px;
+    font-weight: 100;
+}
+.button{
+    margin: 10px;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+}
