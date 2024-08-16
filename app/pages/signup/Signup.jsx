@@ -6,9 +6,8 @@ export default function Signup() {
   return (
     <>
       <div className={style.heading}>
-        Hey, it looks like you either{" "}
-        <span style={{ fontWeight: "600" }}>don't have an account </span> or
-        you're <span style={{ fontWeight: "600" }}>logged out </span>. Please
+        Hey, it looks like you either <span style={{ fontWeight: "600" }}> <br />do not have an account </span> or
+        you are <span style={{ fontWeight: "600" }}>logged out </span>. Please
         use the button below to continue to your account.
       </div>
         <LoginLink className={style.button}>
