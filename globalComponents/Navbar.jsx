@@ -34,13 +34,13 @@ export default function Navbar() {
 
 <nav className={style.nav}>
       <div id={style.leftNav}>
-        <Link href={"http://localhost:3000/pages/browse/women"}>
+        <Link href={"/pages/browse/women"}>
         <li>WOMEN</li>
         </Link>
-        <Link href={"http://localhost:3000/pages/browse/men"}>
+        <Link href={"/pages/browse/men"}>
         <li>MEN</li>
         </Link>
-        <Link href={"http://localhost:3000/pages/browse/a"}>
+        <Link href={"/pages/browse/a"}>
         <li>ALL</li>
         </Link>
       </div>
@@ -49,7 +49,7 @@ export default function Navbar() {
       >HEAVENLY</div>
       </Link>
       <div id={style.rightNav}>
-      <Link className='text-black' href={"pages/whoami"}>
+      <Link className='text-black' href={"/pages/whoami"}>
         <i class="ri-user-smile-fill"></i>
       </Link>
         <div onClick={toggleCarts} className='cursor-pointer'>
@@ -72,7 +72,7 @@ export default function Navbar() {
       <Link href={"/pages/browse/a"}>
     <i class="ri-search-fill"></i>
       </Link>
-      <Link href={"pages/whoami"}>
+      <Link href={"/pages/whoami"}>
     <i class="ri-user-smile-fill"></i>
       </Link>
     <div onClick={toggleCarts} className='cursor-pointer'>

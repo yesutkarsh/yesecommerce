@@ -50,6 +50,18 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+.Options Link{
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    min-width: 300px;
+    /* border-radius: 42px; */
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+
 .Options button{
     /* margin: 10px; */
     width: 100%;

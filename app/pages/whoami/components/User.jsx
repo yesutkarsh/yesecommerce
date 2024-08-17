@@ -5,7 +5,7 @@ import style from './style.module.css';
 import { toggleCart } from '@/utils/slices/toggle';
 import { LogoutLink } from '@kinde-oss/kinde-auth-nextjs';
 import ShimmerText from '@/globalComponents/ShimmerText';
-
+import Link from 'next/link';
 export default function User(props) {
   const dispatch = useDispatch();
 
@@ -35,8 +35,15 @@ export default function User(props) {
         </div>
 
         <div className={style.Options}>
-          <button>Orders</button>
+          <Link href={"/pages/order/myorders"}>
+          <button className={style.button}>Orders</button>
+          </Link>
+          <Link href={"/pages/whoami"}>
           <button onClick={() => dispatch(toggleCart())}>Cart</button>
+          </Link>
+          <Link href={"/pages/browse/a"}>
+          <button onClick={() => dispatch(toggleCart())}>Explore</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,0 +1,33 @@
+.container{
+    margin: 20px;
+    display: grid;
+
+}
+.product{
+    width: 100%;;
+    border-radius: 22px 22px 0px 0px;
+    padding: 14px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.status{
+    height: 40px;
+    background-color: black;
+    border-radius: 0px 0px 12px 12px;
+    color: white;
+    display: flex;
+    align-items: end;
+    padding: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.allprod{
+    margin-left: 20px;
+    color: gray;
+    
+}
