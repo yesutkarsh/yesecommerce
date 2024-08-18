@@ -108,7 +108,7 @@ const orderid = uuidv4(6);
     console.log(data);
     data = JSON.stringify(data);
     try {
-      const response = await fetch(process.env.HOST+"/mongo/saveData", {
+      const response = await fetch("https://yescommercedummy.vercel.app/mongo/saveData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

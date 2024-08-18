@@ -5,7 +5,7 @@ import OrderCard from "./components/OrderCard";
 export default function MyOrder() {
   // State to hold user data
   const [user, setUser] = useState(null);
-  const [email, setEmail] = useState(""); // Added state for email
+  const [email, setEmail] = useState(""); 
   const [orders, setOrders] = useState([])
   // Fetch user data and set the user state
   const fetchData = async () => {
@@ -33,7 +33,7 @@ export default function MyOrder() {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
-          email: email, // Include email in headers
+          email: email,
         },
       });
 
@@ -71,7 +71,7 @@ export default function MyOrder() {
  
  
  
- :"Loading Your Previous Orders"}
+ :"Loading... Your Previous Orders"}
  </>
   );
 }
