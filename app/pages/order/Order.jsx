@@ -103,11 +103,12 @@ const orderid = uuidv4(6);
       User_Account: user,
       Date_Of_Order:orderDate,
       Time_Of_Order:orderTime,
+      status:"Pending"
     };
     console.log(data);
     data = JSON.stringify(data);
     try {
-      const response = await fetch("https://yescommercedummy.vercel.app/mongo/saveData", {
+      const response = await fetch(process.env.HOST+"/mongo/saveData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
