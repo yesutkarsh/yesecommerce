@@ -40,8 +40,8 @@ export default function Navbar() {
         <Link href={"/pages/browse/men"}>
         <li>MEN</li>
         </Link>
-        <Link href={"/pages/browse/a"}>
-        <li>ALL</li>
+        <Link href={"/admin"}>
+        <li>ADMIN</li>
         </Link>
       </div>
       <Link href={"/"}>

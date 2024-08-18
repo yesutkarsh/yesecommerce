@@ -41,8 +41,8 @@ export default function User(props) {
           <Link href={"/pages/whoami"}>
           <button onClick={() => dispatch(toggleCart())}>Cart</button>
           </Link>
-          <Link href={"/pages/browse/a"}>
-          <button onClick={() => dispatch(toggleCart())}>Explore</button>
+          <Link href={"/admin"}>
+          <button>Admin</button>
           </Link>
         </div>
       </div>
