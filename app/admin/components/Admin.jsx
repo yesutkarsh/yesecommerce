@@ -4,7 +4,7 @@ import style from "./style.module.css"
 import Animation from './Animation'
 import Failed from './Failed'
 
-function AdminProdCard ({orderId, email,status,products,date, time, price}){
+function AdminProdCard ({orderId, email,status,products,date, time, price, key}){
     const [allProduct, showAllProduct] = useState(false)
     const [orStatus, setOrstatus] = useState("pending")
     const [anim, setAnim] = useState(false)
@@ -48,7 +48,7 @@ return(<>
         {anim?<Animation/>:""}
         {failed?<Failed/>:""}
 
-    <div className={style.prod}>
+    <div key={key} className={style.prod}>
         <div className='flex gap-4 flex-wrap'>
         <span>OrderId: {orderId}</span>
         <span>Email: {email}</span>
@@ -260,7 +260,7 @@ useEffect(()=>{
     {data.length !==0?
     data.map((product)=>{
         return <AdminProdCard 
-        
+        key={product?.orderid}
         orderId={product?.orderid}
         email={product?.email}
         status={product?.status}
