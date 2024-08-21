@@ -66,7 +66,7 @@ export default function MyOrder() {
  
  orders.map((order)=>{
 
-     return <OrderCard key={Number(order.pincode)} title={order?.products[0]?.name} price={order?.totalPrice} orderDate={order?.Date_Of_Order} products={order?.products}/>
+     return <OrderCard key={Number(order.pincode)} title={order?.products[0]?.name} price={order?.totalPrice} orderDate={order?.Date_Of_Order} products={order?.products} Status={order?.status}/>
  })
  
  

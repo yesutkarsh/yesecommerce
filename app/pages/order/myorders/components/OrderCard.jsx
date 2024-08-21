@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import style from "./style.module.css"
-export default function OrderCard({title, price, orderDate, products}){
+export default function OrderCard({title, price, orderDate, products, Status}){
 
 
   const [viewAll, setViewAll] = useState(false)
@@ -35,7 +35,7 @@ export default function OrderCard({title, price, orderDate, products}){
       </span>
     </div>
     <div className={style.status}>
-      <span> Status:  Pending </span>
+      <span> Status:  {Status} </span>
     </div>
   </div>
   )
