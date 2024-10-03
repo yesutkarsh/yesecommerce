@@ -46,7 +46,9 @@ export default function Navbar() {
       </div>
       <Link href={"/"}>
       <div id={style.centerNav}
-      >HEAVENLY</div>
+      >Vastra
+      <span style={{color:"#ff390c", fontWeight:600}}>Kashi</span>
+      </div>
       </Link>
       <div id={style.rightNav}>
       <Link className='text-black' href={"/pages/whoami"}>
@@ -58,9 +60,9 @@ export default function Navbar() {
       </div>
     </nav>
     <div id={style.navLabel}>
-      HEAVENLY
+      VastraKashi
       <i class="ri-arrow-right-line"></i>
-       HOME
+       Home
     </div>
 
 

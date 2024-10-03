@@ -7,7 +7,7 @@
     width: 70%;
     max-width: 500px;
     padding-left: 20px;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(34, 34, 34);
     border-radius: 12px;
 }
 .search button{
@@ -34,9 +34,10 @@
 }
 .filter span{
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.986);
+    color: #fffbfa;
     border-radius: 12px;
-    padding: 5px;
+    padding: 10px;
     font-weight: 400;
-    border: 2px solid rgb(243, 243, 243);
+    font-size: 14px;
+    border: 2px solid rgba(243, 243, 243, 0.144);
 }

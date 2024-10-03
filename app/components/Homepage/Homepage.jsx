@@ -82,7 +82,7 @@ dispatch(toggleAnimation())
         <div id={style.sec2Card}>
           <div id={style.options}>
             <h1>Hot Pics</h1>
-            <p>Browse Latest Hot pics for next party season</p>
+            <p>Browse Latest Sized, Oversized uni-sex clothing for next party season</p>
           </div>
 
           <div id={style.options}>
@@ -111,8 +111,8 @@ dispatch(toggleAnimation())
 
 <footer className={footerStyle.footer}>
 <div id={footerStyle.sec1}>
-            <h1>HEAVENLY</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, adipisci officia corrupti ipsum quia, dignissimos quaerat</p>
+            <h1>VastraKashi</h1>
+          <p></p>
           <div id={footerStyle.social}>
             <i class="ri-facebook-circle-fill"></i>
             <i class="ri-instagram-fill"></i>
@@ -127,10 +127,10 @@ dispatch(toggleAnimation())
           <li>MEN</li>
         </div>
         <div id={footerStyle.sec2}>
-          <label>ABOUT</label> 
-          <li>NEWS</li>
+          <label>Quick Links</label> 
+          <li>Privacy Policy</li>
           <li>FAQ</li>
-          <li>ABOUT</li>
+          <li>T&C</li>
         </div>
 
 

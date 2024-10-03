@@ -53,6 +53,7 @@
     justify-content: space-around;
     font-size: 30px;
     border-radius: 2px 2px 0px 0px;
+    color: #220701;
 }
 @media screen and (max-width:704px) {
     #leftNav{

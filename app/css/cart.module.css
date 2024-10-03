@@ -1,7 +1,6 @@
 .container{
     position: fixed;
     overflow: hidden;
-    background-color: rgba(228, 228, 228, 0.541);
     height: 100vh;
     top: 0;
     right: 0;
@@ -21,6 +20,7 @@
     justify-content: space-between;
     padding: 20px;
     font-size: 25px;
+
 }
 
 .checkout{
@@ -28,9 +28,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .checkout button{
-    background-color: black;
+    background-color: #ff390c;
     color: white;
     width: 100%;
     height: 100%;
@@ -40,10 +41,11 @@
 
 }
 .checkout span{
-    background-color: whitesmoke;
+    background-color: rgb(37, 28, 28);
     width: 100%;
     font-size: 25px;
     padding: 5px;
+    font-weight: 300;
 }
 .products{
     overflow-x: auto;

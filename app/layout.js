@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       rel="stylesheet"
       />
         <NextTopLoader 
-        color="#313f2c"
+        color="#ff390c"
         height={7}
         />
 

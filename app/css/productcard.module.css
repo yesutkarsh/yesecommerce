@@ -6,8 +6,8 @@
     display: flex;
     gap: 40px;
     margin: 20px;
-    padding: 4px;
-
+    padding: 8px;
+    color: black;
 }
 .dark{
     background-color: rgba(0, 0, 0, 0.336);
@@ -36,11 +36,12 @@
     transition: 0.8s;
 }
 .info{
-    padding-top: 10px;
+    padding: 12px;
     display: flex;
     justify-content: space-between;
-    background-color: white;
     width: 100%;
+    color: #1a1a1a;
+    background-color: #ffffff;
 }
 .product{
     display: flex;
