@@ -10,6 +10,7 @@ import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import Loading from "@/utils/Loading";
 import { toggleAnimation } from "@/utils/slices/toggle";
+import CategoryCard from "@/globalComponents/CategoryCard/CategoryCard";
 export default function Homepage() {
 
   const loadingbar = useSelector((store)=>{
@@ -28,7 +29,13 @@ dispatch(toggleAnimation())
     <>
     {loadingbar?<Loading/>:""}
       <div id={style.section1}>
+
         <h1 id={style.coll}>COLLECTION</h1>
+
+     
+   
+
+        
         <div id={style.cards}>
           {/* <!-- Card 1 --> */}
           <div
@@ -77,6 +84,16 @@ dispatch(toggleAnimation())
         </div>
       </div>
 
+
+
+      <div className={style.categoryCard}>
+      <img src="https://res.cloudinary.com/dpcvcblbt/image/upload/v1729356991/vastrakashi/ucige74cchyqwc7p9k9f.png" alt=""/>
+
+      <img src="https://res.cloudinary.com/dpcvcblbt/image/upload/v1729327917/vastrakashi/l8oygwtokkhojpre6hq2.png" alt=""/>
+      <img src="https://res.cloudinary.com/dpcvcblbt/image/upload/v1729327917/vastrakashi/cljxwhtgvzkytf7ax4v1.png" alt=""/>
+      <img src="https://res.cloudinary.com/dpcvcblbt/image/upload/v1729327917/vastrakashi/ry6visziy7jmnarw6kyr.png" alt=""/>
+    </div>
+
       <div id={style.sectrion2}>
         <h1 id={style.coll}>Trends</h1>
         <div id={style.sec2Card}>
@@ -102,11 +119,18 @@ dispatch(toggleAnimation())
         </div>
 
       </div>
-      <div id={style.section3}>
+  
+
+ <CategoryCard title="VastraKashi Originals" data=""/>
+ <CategoryCard title="VastraKashi Wave"/>
+
+
+    <div id={style.section3}>
         <Image src={pic1}/>
         <Image src={pic2}/>
         <Image src={pic3}/>
       </div>
+
 
 
 <footer className={footerStyle.footer}>

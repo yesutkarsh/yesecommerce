@@ -8,7 +8,10 @@ import Loading from "@/utils/Loading";
 export default function Browse() {
 
   const params = useParams()
+  // Getting query from params
   const {category} = params
+
+
   const [data, setData] = useState(null);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [query, setQuery] = useState(category);

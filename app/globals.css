@@ -7,8 +7,8 @@ body {
   margin-bottom: 100px;
   padding: 0;
   box-sizing: border-box;
-  color: white;
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 
 * {

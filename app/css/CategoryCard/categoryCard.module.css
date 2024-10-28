@@ -1,0 +1,40 @@
+.categoryCard {
+    display: flex;
+    flex-wrap: nowrap;  
+    overflow-x: auto;   
+    overflow-y: hidden; 
+    height: 500px;     
+    margin-bottom: 50px; 
+}
+.wrapper{
+    padding-top: 10px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrotflLYjaLlc0Brv2-NaznEE_oU2JGqbqgFb19qKvjc-R7rHLcknL0N0IILSt4jj1ehA&usqp=CAU);
+}
+.Card {
+    flex: 0 0 auto; 
+    width: 250px;       
+    margin: 20px;  
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    height: 410px;
+    border: 1px solid rgba(0, 0, 0, 0.034);
+}
+
+.Card img {
+    height: 300px;      
+    margin-bottom: 10px;
+}
+
+.Title {
+    font-size: 20px;
+    font-weight: 900;   
+}
+.categoryTitle{
+    color: #302f2fe0;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: white;
+    text-align: center;
+    box-shadow: 1px 1px 100px 1px rgba(0, 0, 0, 0.418);
+}
